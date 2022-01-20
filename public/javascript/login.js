@@ -1,0 +1,29 @@
+const { response } = require("express");
+
+function signupFormHandler(event) {
+    event.preventDefault();
+
+    const username = document.querySelector('#username-signup').value.trim();
+    const email = document.querySelector('#email-signup').value.trim();
+    const password = document.querySelector('#password-signup').value.trim();
+
+    if (username && email && password) {
+        const response = await('/api/users', {
+            method: 'post',
+            body: JSON.stringify({
+                username,
+                email,
+                password
+            }),
+            headers: { 'Content Type': 'application/json '}
+        });
+
+        if (response.ok) {
+            console.log('ok!')
+        }
+    } else {
+        alert(response.statusText);
+    }
+}
+
+document.querySelector('.sign-up').addEventListener('submit', signupFormHandler);
