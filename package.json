@@ -10,6 +10,6 @@
     "sequelize": "^6.13.0"
   },
   "scripts": {
-    "seed": "node seeds/users-seeds.js"
+    "seed": "node seeds/index.js"
   }
 }
