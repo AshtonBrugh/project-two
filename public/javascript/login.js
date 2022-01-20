@@ -22,16 +22,35 @@ async function signupFormHandler(event) {
             } else {
                 alert(response.statusText);
     }
+};
+
+async function loginFormHandler(event) {
+    event.preventDefault();
+
+    const username = document.querySelector('#user-login').value.trim();
+    const password = document.querySelector('#password-login').value.trim();
+
+    if (username && password) {
+        const response = await fetch('/api/users/login', {
+            method: 'post',
+            body: JSON.stringify({
+                username,
+                password
+            }),
+            headers: { 'Content-Type': 'application/json' }
+        });
+
+        if (response.ok){
+            document.location.replace('#') //this is where we send them to their homepage
+        } else {
+            alert('Incorrect username or password!')
+        }
+    }
 }
 
-    
-   
-// const plzWork = (event) => {
-//     event.preventDefault();
-//     console.log('plzwork')
-// };
 
 
 
 document.querySelector('#sign-up').addEventListener('submit', signupFormHandler);
 
+document.querySelector('#login').addEventListener('submit', loginFormHandler);
