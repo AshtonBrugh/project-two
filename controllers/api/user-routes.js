@@ -13,6 +13,11 @@ router.get('/', (req, res) => {
     });
 });
 
+//get route for homepage
+router.get('/home', (req, res) => {
+    res.render('homepage')
+});
+
 router.post('/', (req, res) => {
     User.create({
         username: req.body.username,

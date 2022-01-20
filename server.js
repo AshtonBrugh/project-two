@@ -33,6 +33,13 @@ app.get('/', (req, res) => {
     res.render('homepage');
 })
 
+app.get('/home', (req, res) => {
+    res.render('homepage')
+});
+
+
+
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '/public')));

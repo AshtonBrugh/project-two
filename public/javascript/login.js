@@ -41,7 +41,7 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok){
-            document.location.replace('#') //this is where we send them to their homepage
+            document.location.replace('/home') //this is where we send them to their homepage
         } else {
             alert('Incorrect username or password!')
         }
