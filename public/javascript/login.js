@@ -1,29 +1,37 @@
-const { response } = require("express");
-
-function signupFormHandler(event) {
+async function signupFormHandler(event) {
     event.preventDefault();
+    console.log(event.target);
 
     const username = document.querySelector('#username-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
 
     if (username && email && password) {
-        const response = await('/api/users', {
+        const response = await fetch('/api/users', {
             method: 'post',
             body: JSON.stringify({
                 username,
                 email,
                 password
             }),
-            headers: { 'Content Type': 'application/json '}
-        });
-
-        if (response.ok) {
-            console.log('ok!')
-        }
-    } else {
-        alert(response.statusText);
+            headers: { 'Content-Type': 'application/json' }
+        }) 
+            if (response.ok) {
+                   document.location.replace('/#');
+                }
+            } else {
+                alert(response.statusText);
     }
 }
 
-document.querySelector('.sign-up').addEventListener('submit', signupFormHandler);
+    
+   
+// const plzWork = (event) => {
+//     event.preventDefault();
+//     console.log('plzwork')
+// };
+
+
+
+document.querySelector('#sign-up').addEventListener('submit', signupFormHandler);
+
