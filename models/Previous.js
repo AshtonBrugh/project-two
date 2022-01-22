@@ -5,7 +5,7 @@ const sequelize = require('../config/connection');
 class Previous extends Model {}
 
 //create fields/column for Previous model
-Result.init(
+Previous.init(
     {
         id: {
         type: DataTypes.INTEGER,

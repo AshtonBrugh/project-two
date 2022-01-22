@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Result } = require ('../../models');
 
 //get all results
-router.get('/result', (req, res) => {
+router.get('/', (req, res) => {
     Result.findAll({        })
     .then(dbUserData => res.json(dbUserData))
     .catch(err => {
@@ -12,7 +12,7 @@ router.get('/result', (req, res) => {
 });
 
 //find one result
-router.get('/result/:id', (req, res) => {
+router.get('/:id', (req, res) => {
     Result.findOne({
         attributes: { exclude: ['password'] },
         where: {
@@ -33,7 +33,7 @@ router.get('/result/:id', (req, res) => {
 });
 
 // Add new result option
-router.post('/result', (req, res) => {
+router.post('/', (req, res) => {
     Result.create({
         name: req.body.name,
         quote: req.body.quote,
@@ -56,7 +56,7 @@ router.post('/result', (req, res) => {
 });
 
 //delete a result
-router.delete('/result/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
     User.destroy({
         where: {
             id: req.params.id
@@ -74,3 +74,5 @@ router.delete('/result/:id', (req, res) => {
         res.status(500).json(err);
     });
 });
+
+module.exports = router;

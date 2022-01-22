@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Previous } = require ('../../models');
 
 //get all previous results
-router.get('/previous', (req, res) => {
+router.get('/', (req, res) => {
     Previous.findAll({})
     .then(dbUserData => res.json(dbUserData))
     .catch(err => {
@@ -12,9 +12,8 @@ router.get('/previous', (req, res) => {
 });
 
 //find one previous result
-router.get('/previous/:id', (req, res) => {
+router.get('/:id', (req, res) => {
     Previous.findOne({
-        attributes: { exclude: ['password'] },
         where: {
             id: req.params.id
         }
@@ -33,7 +32,7 @@ router.get('/previous/:id', (req, res) => {
 });
 
 // Add new previous result option
-router.post('/previous', (req, res) => {
+router.post('/', (req, res) => {
     Previous.create({
         name: req.body.name,
         quote: req.body.quote,
@@ -56,7 +55,7 @@ router.post('/previous', (req, res) => {
 });
 
 //delete a previousresult
-router.delete('/previous/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
     Previous.destroy({
         where: {
             id: req.params.id
@@ -74,3 +73,5 @@ router.delete('/previous/:id', (req, res) => {
         res.status(500).json(err);
     });
 });
+
+module.exports = router;
