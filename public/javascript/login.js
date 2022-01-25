@@ -44,6 +44,7 @@ async function loginFormHandler(event) {
             document.location.replace('/home') //this is where we send them to their homepage
         } else {
             alert('Incorrect username or password!')
+            //if wrong clear out forms
         }
     }
 }

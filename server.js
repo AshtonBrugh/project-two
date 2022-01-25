@@ -37,6 +37,10 @@ app.get('/home', (req, res) => {
     res.render('homepage', {layout: 'home'});
 })
 
+app.get('/login', (req, res) => {
+    res.render('homepage')
+});
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
