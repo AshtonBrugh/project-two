@@ -6,7 +6,7 @@ const resultData = [
         quote: "Youuu're dethpicable!",
         origin: "Looney Tunes",
         personalities: "Greedy, Self-centered, Egotistical, Wacky"
-    }
+    },
 ];
 
 const seedResult = () => Result.bulkCreate(resultData);

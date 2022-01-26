@@ -23,7 +23,7 @@
   * mysql2
   
   ## How to Use locally
-  To install, clone this repository to your local drive, download the dependencies noted withing the package.json file. Navigate to the .env.edit file in the main folder. Within the file change it to your mysql username and password, then reaname the file to remove the .edit, leaving just .env. Navigate to your file location in the terminal. type mysql -u ~username~ -p, and enter your password. type source sql/schema.sql and then source/seeds.sql and then quit. type node server or npm start. The program will start and you Can navigate to localhost:3001 to get started. Take the test and see your results!
+  To install, clone this repository to your local drive, download the dependencies noted withing the package.json file. Navigate to the .env.rename file in the main folder. Within the file change it to your mysql username and password, then reaname the file to remove the .edit, leaving just .env. Navigate to your file location in the terminal. type mysql -u ~username~ -p, and enter your password. type source sql/schema.sql and then source/seeds.sql and then quit. type node server or npm start. The program will start and you Can navigate to localhost:3001 to get started. Take the test and see your results!
 
   You can also simply Click the link below under the [Deployed Application](#deployed-application) section
   

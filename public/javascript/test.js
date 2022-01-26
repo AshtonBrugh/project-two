@@ -17,57 +17,57 @@ const questions = [
     {
       "question": "What would you do in a bar fight?",
       "answer1": "1. Join in.",
-      "answer1Total": "1",
+      "answer1Total": "5",
       "answer2": "2. Break it up.",
-      "answer2Total": "2",
+      "answer2Total": "10",
       "answer3": "3. Run away.",
-      "answer3Total": "3",
+      "answer3Total": "15",
       "answer4": "4. Ignore it.",
-      "answer4Total": "4"
+      "answer4Total": "20"
     },
     {
       "question": "What would you do if you were given a million dollars?",
       "answer1": '1. Buy yourself everything you ever wanted.',
-      "answer1Total": "1",
+      "answer1Total": "5",
       "answer2": '2. Donate to charity.',
-      "answer2Total": "2",
+      "answer2Total": "10",
       "answer3": '3. spend some and invest the rest.',
-      "answer3Total": "4",
+      "answer3Total": "20",
       "answer4": '4. Like that would ever happen.',
-      "answer4Total": "3"
+      "answer4Total": "15"
     },
     {
       "question": 'Are you a moring, mid day, evening, or night owl sort of person?',
       "answer1": "1. Morning.",
-      "answer1Total": "2",
+      "answer1Total": "10",
       "answer2": "2. Mid day.",
-      "answer2Total": "3",
+      "answer2Total": "15",
       "answer3": "3. Evening.",
-      "answer3Total": "4",
+      "answer3Total": "20",
       "answer4": "4. Night owl.",
-      "answer4Total": "1"
+      "answer4Total": "5"
     },
     {
       "question": "What is you favorite season?",
       "answer1": "1. Spring.",
-      "answer1Total": "3",
+      "answer1Total": "15",
       "answer2": "2. Summer.",
-      "answer2Total": "2",
+      "answer2Total": "10",
       "answer3": "3. Fall.",
-      "answer3Total": "4",
+      "answer3Total": "20",
       "answer4": "4. Winter.",
-      "answer4Total": "1"
+      "answer4Total": "5"
     },
     {
       "question": "You are riding in a trolley without functioning breaks, headed toward a switch in the tracks. On the current track stand five people who will be hit. You have access to a switch to change tracks, but one individual stands there. Do you switch the tracks or not?",
       "answer1": "1. I dont know!!",
-      "answer1Total": "3",
+      "answer1Total": "15",
       "answer2": "2. Obviously switch tracks.",
-      "answer2Total": "2",
+      "answer2Total": "10",
       "answer3": "3. Destiny has chosen the five.",
-      "answer3Total": "1",
+      "answer3Total": "5",
       "answer4": "4. I refuse to answer.",
-      "answer4Total": "4"
+      "answer4Total": "20"
     }
 ];
 
@@ -127,7 +127,7 @@ function generateResults(){
         total += score[i]
         console.log(total)
     }
-    if (total <= 4) {
+    if (total <= 30) {
           //Generate HTML For output Here Chaotic Evil The Joker
         quizContainer.innerHTML = 
         `<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -147,7 +147,7 @@ function generateResults(){
         `
         return;
     }
-    else if (total >= 5 && total <= 8) {
+    else if (total >= 31 && total <= 45) {
         //Generate HTML for output here Lawful Evil Lord Farquaad
         quizContainer.innerHTML = 
         `<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -167,7 +167,7 @@ function generateResults(){
     
         return;
     }
-    else if (total >= 9 && total <= 12) {
+    else if (total >= 46 && total <= 60) {
            //Generate HTML for output here Neutral Good Spongebob Squarepants
         quizContainer.innerHTML = `<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -189,7 +189,7 @@ function generateResults(){
      
         return;
     }
-    else if (total >= 13 && total <= 16) {
+    else if (total >= 61 && total <= 79) {
          //Generate HTML for output here True Neutral Brian Griffin
         quizContainer.innerHTML = 
         `<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -209,7 +209,7 @@ function generateResults(){
        
         return;
     }
-    else if (total >= 17 && total <= 20) {
+    else if (total >= 80 && total <= 100) {
           //Generate HTML for output here Lawful Good Woody Pride
         quizContainer.innerHTML = 
         `<link rel="preconnect" href="https://fonts.googleapis.com">
