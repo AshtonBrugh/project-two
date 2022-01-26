@@ -10,7 +10,7 @@ const routes = require('./controllers/');
 const sequelize = require('./config/connection');
 
 const app = express();
-const PORT = process.env.PORT || 40233;
+//const PORT = process.env.PORT || 3001;
 
 const sess = {
     secret: 'the secret',
@@ -53,5 +53,5 @@ app.get('/home', loggedIn, (req, res) => {
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => console.log('Now listening!'));
+    app.listen(process.env.PORT || 3001, () => console.log('Now listening!'));
 })
