@@ -137,7 +137,7 @@ function generateResults(){
                 <figure class="card__thumb">
                     <img src="Images/the-joker.jpg" alt="Picture of Heath Ledger playing The Joker" class="card__image">
                     <figcaption class="card__caption">
-                        <h2 class="card__title">"'Chaotic Evil' The Joker"</h2>
+                        <h2 class="card__title">'Chaotic Evil' The Joker</h2>
                         <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
                         <a href="" class="card__button">Read more</a>
                     </figcaption>
@@ -153,9 +153,9 @@ function generateResults(){
         <div class="container">
             <div class="card">
                 <figure class="card__thumb">
-                    <img src="Images/the-joker.jpg" alt="Picture of Lord Farquad from Shrek" class="card__image">
+                    <img src="Images/lord-farquaad.jpg" alt="Picture of Lord Farquad from Shrek" class="card__image">
                     <figcaption class="card__caption">
-                        <h2 class="card__title">"'Lawful Evil' Lord Farquad"</h2>
+                        <h2 class="card__title">'Lawful Evil' Lord Farquad</h2>
                         <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
                     </figcaption>
                 </figure>
@@ -171,7 +171,7 @@ function generateResults(){
         <div class="container">
             <div class="card">
                 <figure class="card__thumb">
-                    <img src="Images/the-joker.jpg" alt="Picture of Spongebob Squarepants" class="card__image">
+                    <img src="Images/spongebob-squarepants.jpg" alt="Picture of Spongebob Squarepants" class="card__image">
                     <figcaption class="card__caption">
                         <h2 class="card__title">'Neutral Good' Spongebob Squarepants</h2>
                         <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
@@ -189,7 +189,7 @@ function generateResults(){
         <div class="container">
             <div class="card">
                 <figure class="card__thumb">
-                    <img src="Images/the-joker.jpg" alt="Picture of Brian Griffin" class="card__image">
+                    <img src="Images/brian-griffin.jpg" alt="Picture of Brian Griffin" class="card__image">
                     <figcaption class="card__caption">
                         <h2 class="card__title">'True Neutral' Brian Griffin</h2>
                         <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
@@ -207,7 +207,7 @@ function generateResults(){
         <div class="container">
             <div class="card">
                 <figure class="card__thumb">
-                    <img src="Images/the-joker.jpg" alt="Picture of Good Woody Pride" class="card__image">
+                    <img src="Images/woody-pride.jpg" alt="Picture of Good Woody Pride" class="card__image">
                     <figcaption class="card__caption">
                         <h2 class="card__title">'Lawful Good' Woody Pride</h2>
                         <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
