@@ -11,6 +11,7 @@ const option4 = document.querySelector('.option4');
 const nextButton = document.querySelector('.next');
 // const restartButton = document.querySelector('.restart');
 const result = document.querySelector('.result');
+const quizContainer = document.querySelector('.quiz-container');
 
 
 const questions = [
@@ -138,6 +139,7 @@ function generateResults() {
         return;
     }
     else if (total >= 9 && total <= 12) {
+        quizContainer.innerHTML = ``
         //Generate HTML for output here Neutral Good Spongebob Squarepants
         console.log('yes')
         return;
