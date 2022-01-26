@@ -94,56 +94,60 @@ const totalQuestions = questions.length;
 
 function loadNextQuestion () {
     const selectedOption = document.querySelector('input[type="radio"]:checked');
-    
-//  Confirm input was made
-    if(!selectedOption) {
-        alert('Please select your answer!');
-        return;
-    }
+    const answerScore = Number(selectedOption.nextElementSibling.getAttribute('data-total'));
 
-const answerScore = Number(selectedOption.nextElementSibling.getAttribute('data-total'));
-
-// Add score to current total
-    score.push(answerScore);
-    selectedAnswersData.push();
-//Increment question number
-    currentQuestion++;
-
+    for(let i = 0; i < totalQuestions; i++) {
+        currentQuestion++;
         selectedOption.checked = false;
-//Once out of questions move onto results
-    if(currentQuestion == totalQuestions - 1) {
-        nextButton.textContent = 'Finish';
+        score.push(answerScore)
+        selectedAnswersData.push();
+        if(!selectedOption) {
+            alert('Please select your answer!');
+            return;
+        }
+        if(currentQuestion === totalQuestions - 1 ) {
+            nextButton.textContent = 'Finish';
+        }
+        if(currentQuestion === totalQuestions) {
+            console.log(score)
+            generateResults(score);
+            return;
+        }
+        if(currentQuestion < totalQuestions) {
+            generateQuestions(currentQuestion);
+            return;
+        }
     }
-    //If the quiz is finished then we hide the questions container and show the results 
-    if(currentQuestion == totalQuestions) {
-        generateResults();
-        return;
-    }
-    generateQuestions(currentQuestion);
+    
 };
 
 function generateResults() {
-    if (score <= 4) {
+    var total = 0
+    for (let i = 0; i < score.length; i++) {
+        total += score[i]
+        console.log(total)
+    }
+    if (total <= 4) {
         //Generate HTML For output Here Chaotic Evil The Joker
         console.log('hello')
         return;
     }
-    else if (score >= 5 && score <= 8) {
+    else if (total >= 5 && total <= 8) {
         //Generate HTML for output here Lawful Evil Lord Farquaad
         console.log('ok')
         return;
     }
-    else if (score >= 9 && score <= 12) {
+    else if (total >= 9 && total <= 12) {
         //Generate HTML for output here Neutral Good Spongebob Squarepants
         console.log('yes')
         return;
     }
-    else if (score >= 13 && score <= 16) {
+    else if (total >= 13 && total <= 16) {
         //Generate HTML for output here True Neutral Brian Griffin
         console.log('ok')
         return;
     }
-    else if (score >= 17 && score <= 20) {
+    else if (total >= 17 && total <= 20) {
         //Generate HTML for output here Lawful Good Woody Pride
         console.log('ok')
         return;
