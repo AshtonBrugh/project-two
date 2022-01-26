@@ -138,8 +138,9 @@ function generateResults(){
                     <img src="Images/the-joker.jpg" alt="Picture of Heath Ledger playing The Joker" class="card__image">
                     <figcaption class="card__caption">
                         <h2 class="card__title">'Chaotic Evil' The Joker</h2>
-                        <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
-                        <a href="" class="card__button">Read more</a>
+                        <em class="card__snippet">"Someday someone will break you so badly that you will become unbreakable" -The Joker</em>
+                        <p> Origin: Gotham </p>
+                        <p> Personality traits: Supervillian, Sadistic, Criminally Insane Narcissist"
                     </figcaption>
                 </figure>
             </div>
@@ -156,7 +157,9 @@ function generateResults(){
                     <img src="Images/lord-farquaad.jpg" alt="Picture of Lord Farquad from Shrek" class="card__image">
                     <figcaption class="card__caption">
                         <h2 class="card__title">'Lawful Evil' Lord Farquad</h2>
-                        <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
+                        <em class="card__snippet">"Some of you may die, but it's a sacrifice I am willing to make." -Lord Farquad</em>
+                        <p> Origin: Duloc </p>
+                        <p> Personality Traits: Tyrannical Dictator, Obsessed with Perfection, Overcompensating for something. </p>
                     </figcaption>
                 </figure>
             </div>
@@ -166,7 +169,9 @@ function generateResults(){
     }
     else if (total >= 9 && total <= 12) {
            //Generate HTML for output here Neutral Good Spongebob Squarepants
-        quizContainer.innerHTML = `<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        quizContainer.innerHTML = `<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Arvo:wght@700&family=Josefin+Sans&family=M+PLUS+1+Code&family=Oswald:wght@400;500&family=Roboto+Condensed&family=Source+Code+Pro&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 
         <div class="container">
             <div class="card">
@@ -174,7 +179,9 @@ function generateResults(){
                     <img src="Images/spongebob-squarepants.jpg" alt="Picture of Spongebob Squarepants" class="card__image">
                     <figcaption class="card__caption">
                         <h2 class="card__title">'Neutral Good' Spongebob Squarepants</h2>
-                        <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
+                        <em class="card__snippet">"If I were to die right now in a fiery explosion due to the carelessness of a friend…. Then it would just be alright." -Spongebob Squarepants</em>
+                        <p> Origin: Under the Sea </p>
+                        <p> Personality Traits: Fun loving, Hyperactive, Happy-Go-Lucky </p>
                     </figcaption>
                 </figure>
             </div>
@@ -192,7 +199,9 @@ function generateResults(){
                     <img src="Images/brian-griffin.jpg" alt="Picture of Brian Griffin" class="card__image">
                     <figcaption class="card__caption">
                         <h2 class="card__title">'True Neutral' Brian Griffin</h2>
-                        <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
+                        <em class="card__snippet">"You know what, Stewie, if you don’t like it, go on the Internet and complain." -Brian Griffin</em>
+                        <p> Origin: Quahog </p>
+                        <p> Personality Traits: Wry, Sophisticated, Intellilgent </p>
                     </figcaption>
                 </figure>
             </div>
@@ -203,14 +212,18 @@ function generateResults(){
     else if (total >= 17 && total <= 20) {
           //Generate HTML for output here Lawful Good Woody Pride
         quizContainer.innerHTML = 
-        `<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        `<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Arvo:wght@700&family=Josefin+Sans&family=M+PLUS+1+Code&family=Oswald:wght@400;500&family=Roboto+Condensed&family=Source+Code+Pro&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
         <div class="container">
             <div class="card">
                 <figure class="card__thumb">
                     <img src="Images/woody-pride.jpg" alt="Picture of Good Woody Pride" class="card__image">
                     <figcaption class="card__caption">
                         <h2 class="card__title">'Lawful Good' Woody Pride</h2>
-                        <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
+                        <em class="card__snippet">" "Being there for a child is the most noble thing a toy can do." - Woody Pride</em>
+                        <p> Origin: Andy's room </p>
+                        <p> Personality Traits: Smart, determined, passionate </p>
                     </figcaption>
                 </figure>
             </div>
@@ -224,4 +237,6 @@ function generateResults(){
 generateQuestions(currentQuestion);
 nextButton.addEventListener('click', loadNextQuestion);
 // result.addEventListener('click',restartQuiz);
+
+
 
