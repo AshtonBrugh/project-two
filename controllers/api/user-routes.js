@@ -83,6 +83,22 @@ router.post('/login', (req, res) => {
     });
 });
 
+//logout route
+router.post('/logout', (req, res) => {
+    console.log(req.session);
+    if (req.session.loggedIn) {
+        req.session.destroy((err)=> {
+            if (err) {
+                console.log(err)
+            };
+            req.session = null;
+            res.status(200).end()
+        })
+    } else {
+        res.status(404).end()
+    }
+});
+
 //delete a user
 router.delete('/:id', (req, res) => {
     User.destroy({

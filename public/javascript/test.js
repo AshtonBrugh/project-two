@@ -10,7 +10,7 @@ const option3 = document.querySelector('.option3');
 const option4 = document.querySelector('.option4');
 const nextButton = document.querySelector('.next');
 // const restartButton = document.querySelector('.restart');
-const result = document.querySelector('.result');
+const quizContainer = document.querySelector('.quiz-container');
 
 
 const questions = [
@@ -128,40 +128,94 @@ function generateResults(){
         console.log(total)
     }
     if (total <= 4) {
-        //Generate HTML For output Here Chaotic Evil The Joker
-        container.style.display = 'none';
-        result.innerHTML = 
-        `<h1> This worked! </h1>`
-      
+          //Generate HTML For output Here Chaotic Evil The Joker
+        quizContainer.innerHTML = 
+        `<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <div class="container">
+            <div class="card">
+                <figure class="card__thumb">
+                    <img src="Images/the-joker.jpg" alt="Picture of Heath Ledger playing The Joker" class="card__image">
+                    <figcaption class="card__caption">
+                        <h2 class="card__title">"'Chaotic Evil' The Joker"</h2>
+                        <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
+                        <a href="" class="card__button">Read more</a>
+                    </figcaption>
+                </figure>
+            </div>
+        `
         return;
     }
     else if (total >= 5 && total <= 8) {
         //Generate HTML for output here Lawful Evil Lord Farquaad
-        container.style.display = 'none';
-        result.innerHTML = 
-        `<h1> This worked! </h1>`
-        
+        quizContainer.innerHTML = 
+        `<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <div class="container">
+            <div class="card">
+                <figure class="card__thumb">
+                    <img src="Images/the-joker.jpg" alt="Picture of Lord Farquad from Shrek" class="card__image">
+                    <figcaption class="card__caption">
+                        <h2 class="card__title">"'Lawful Evil' Lord Farquad"</h2>
+                        <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        `
+    
         return;
     }
     else if (total >= 9 && total <= 12) {
-        //Generate HTML for output here Neutral Good Spongebob Squarepants
-        container.style.display = 'none';
-        result.innerHTML = 
-        `<h1> This worked! </h1>`
+           //Generate HTML for output here Neutral Good Spongebob Squarepants
+        quizContainer.innerHTML = `<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <div class="container">
+            <div class="card">
+                <figure class="card__thumb">
+                    <img src="Images/the-joker.jpg" alt="Picture of Spongebob Squarepants" class="card__image">
+                    <figcaption class="card__caption">
+                        <h2 class="card__title">'Neutral Good' Spongebob Squarepants</h2>
+                        <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        `
+     
         return;
     }
     else if (total >= 13 && total <= 16) {
-        //Generate HTML for output here True Neutral Brian Griffin
-        container.style.display = 'none';
-        result.innerHTML = 
-        `<h1> This worked! </h1>`
+         //Generate HTML for output here True Neutral Brian Griffin
+        quizContainer.innerHTML = 
+        `<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <div class="container">
+            <div class="card">
+                <figure class="card__thumb">
+                    <img src="Images/the-joker.jpg" alt="Picture of Brian Griffin" class="card__image">
+                    <figcaption class="card__caption">
+                        <h2 class="card__title">'True Neutral' Brian Griffin</h2>
+                        <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
+                    </figcaption>
+                </figure>
+            </div>
+    `
+       
         return;
     }
     else if (total >= 17 && total <= 20) {
-        //Generate HTML for output here Lawful Good Woody Pride
-        container.style.display = 'none';
-        result.innerHTML = 
-        `<h1> This worked! </h1>`
+          //Generate HTML for output here Lawful Good Woody Pride
+        quizContainer.innerHTML = 
+        `<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <div class="container">
+            <div class="card">
+                <figure class="card__thumb">
+                    <img src="Images/the-joker.jpg" alt="Picture of Good Woody Pride" class="card__image">
+                    <figcaption class="card__caption">
+                        <h2 class="card__title">'Lawful Good' Woody Pride</h2>
+                        <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
+                    </figcaption>
+                </figure>
+            </div>
+    `
+      
         return;
     }
 };
@@ -170,3 +224,4 @@ function generateResults(){
 generateQuestions(currentQuestion);
 nextButton.addEventListener('click', loadNextQuestion);
 // result.addEventListener('click',restartQuiz);
+
