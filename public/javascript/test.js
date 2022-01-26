@@ -122,30 +122,42 @@ const answerScore = Number(selectedOption.nextElementSibling.getAttribute('data-
     generateQuestions(currentQuestion);
 };
 
-function generateResults() {
+function generateResults(){
     if (score <= 4) {
         //Generate HTML For output Here Chaotic Evil The Joker
-        console.log('hello')
+        container.style.display = 'none';
+        result.innerHTML = 
+        `<h1> This worked! </h1>`
+      
         return;
     }
     else if (score >= 5 && score <= 8) {
         //Generate HTML for output here Lawful Evil Lord Farquaad
-        console.log('ok')
+        container.style.display = 'none';
+        result.innerHTML = 
+        `<h1> This worked! </h1>`
+        
         return;
     }
     else if (score >= 9 && score <= 12) {
         //Generate HTML for output here Neutral Good Spongebob Squarepants
-        console.log('yes')
+        container.style.display = 'none';
+        result.innerHTML = 
+        `<h1> This worked! </h1>`
         return;
     }
     else if (score >= 13 && score <= 16) {
         //Generate HTML for output here True Neutral Brian Griffin
-        console.log('ok')
+        container.style.display = 'none';
+        result.innerHTML = 
+        `<h1> This worked! </h1>`
         return;
     }
     else if (score >= 17 && score <= 20) {
         //Generate HTML for output here Lawful Good Woody Pride
-        console.log('ok')
+        container.style.display = 'none';
+        result.innerHTML = 
+        `<h1> This worked! </h1>`
         return;
     }
 };
