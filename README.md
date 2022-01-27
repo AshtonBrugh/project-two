@@ -48,7 +48,7 @@
   https://hidden-plains-33333.herokuapp.com/
 
   ## Screenshot
-  ![Login screen](./public/mages/login-ss.jpg)
+  ![Login screen](./public/Images/login-ss.jpg)
   
   ![Test screen](./public/Images/test-ss.jpg)
 
