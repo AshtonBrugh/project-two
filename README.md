@@ -41,12 +41,14 @@
   * Connect Session Sequelize
   
   ## Deployed Application
-  Insert Deployed link here***
+  https://hidden-plains-33333.herokuapp.com/
 
   ## Screenshot
   ![Application Screenshot](./public/images/login-ss.jpg)
   
   ![Application Screenshot](./public/images/test-ss.jpg)
+
+  ![Application Screenshot](./public/images/result-ss.jpg)
 
   ## Github Repo Location
   [https://github.com/AshtonBrugh/project-two](https://github.com/AshtonBrugh/project-two)
